@@ -17,7 +17,7 @@ async def on_ready():
   print('--------')
   print('--------')
   print('Started <Lite>') 
-  return await client.change_presence(game=discord.Game(name='<Nøøb Gamer || ^help>')) 
+  return await bot.change_presence(game=discord.Game(name='<Nøøb Gamer || ^help>')) 
 
 
   
