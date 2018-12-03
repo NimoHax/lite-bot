@@ -81,15 +81,6 @@ async def badday(ctx):
 async def help(ctx):
   await bot.say("▪We Will Contact  @Nøøb Gamer#3762 Sum More Information For This Bot.▪ "+" "+ctx.message.author.name)
   
-@bot.command(pass_context=True)
-async def invite(ctx):
-  await bot.say("☆ https://discord.gg/V5KvU32 ☆"+" "+ctx.message.author.name)
   
-@bot.command(pass_context=True)
-async def invitebot(ctx):
-  await bot.say("♡ https://discordapp.com/api/oauth2/authorize?client_id=518326586852900885&permissions=8&scope=bot ♡"+" "+ctx.message.author.name)
-  
-  
- 
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
 bot.run(os.environ['BOT_TOKEN'])
