@@ -23,7 +23,7 @@ async def hi(ctx):
   
 @bot.command(pass_context=True)
 async def welcome(ctx):
-  await bot.say("☆Welcome to my first Noob Bot☆"+" "+ctx.message.author.name)
+  await bot.say("☆Welcome to my first Lite Bot☆"+" "+ctx.message.author.name)
   
 @bot.command(pass_context=True)
 async def goodmorning(ctx):
@@ -79,7 +79,7 @@ async def badday(ctx):
   
 @bot.command(pass_context=True)
 async def help(ctx):
-  await bot.say("▪We Will Contact  @Nøøb Gamer#3762 Sum More Information For This Bot.▪ "+" "+ctx.message.author.name) 
+  await bot.say("▪We Will Contact  Nøøb Gamer Sum More Information For This Bot.▪ "+" "+ctx.message.author.name) 
 
   
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
