@@ -5,7 +5,7 @@ import os
 
 
 #GIVE YOUR BOT A PREFIX; mine is a.
-bot = commands.Bot(command_prefix="a.")
+bot = commands.Bot(command_prefix="^")
 
 
 
@@ -21,6 +21,9 @@ async def on_ready():
 async def hi(ctx):
   await bot.say("Hello there"+" "+ctx.message.author.name)
   
+@bot.command(pass_context=True)
+async def welcome(ctx):
+  await bot.say("☆Welcome to my first Taxt Bot☆"+" "+ctx.message.author.name)
   
  
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
