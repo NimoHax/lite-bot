@@ -56,7 +56,14 @@ async def talk(ctx):
 @bot.command(pass_context=True)
 async def sing(ctx):
   await bot.say("Kiki, do you love me? Are you riding? Say you ll never ever leave from beside me Cause I want ya, and I need ya And I am down for you always KB, do you love me? Are you riding? Say you ll never ever leave from beside me Cause I want ya, and I need ya And I am down for you always"+" "+ctx.message.author.name)
+ 
+@bot.command(pass_context=True)
+async def seriously(ctx):
+  await bot.say("Noo I was just kidding!! 😝 Am sorry honey I like him very much!😃"+" "+ctx.message.author.name)
   
+@bot.command(pass_context=True)
+async def revive(ctx):
+  await bot.say("I mma kick your ass so hard that you ll be back to life 🙃😉"+" "+ctx.message.author.name)
   
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
 bot.run(os.environ['BOT_TOKEN'])
