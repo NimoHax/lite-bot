@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix="^")
 #PRINT THE DISCORD BOT'S NAME WHEN IT'S READY
 @bot.event
 async def on_ready():
-  print(bot.user.name)
+  print('Logged in as '+bot.user.name+'')
   print('--------')
   print('--------')
   print('Started <Noob>') 
