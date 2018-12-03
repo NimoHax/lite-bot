@@ -45,6 +45,14 @@ async def why(ctx):
 async def who(ctx):
   await bot.say("Oh never mind 😔 it s just dyno 😝"+" "+ctx.message.author.name) 
   
+@bot.command(pass_context=True)
+async def thanks(ctx):
+  await bot.say("No need to thank me bro. Am always here for you.😉"+" "+ctx.message.author.name)
+  
+@bot.command(pass_context=True)
+async def talk(ctx):
+  await bot.say("Nothing much just doing a  job for my girlfriend😎🤗 So please stop DISTURBING ME!!!!!"+" "+ctx.message.author.name) 
+  
   
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
 bot.run(os.environ['BOT_TOKEN'])
