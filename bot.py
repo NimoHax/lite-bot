@@ -16,7 +16,7 @@ async def on_ready():
   print('Logged in as '+bot.user.name+'')
   print('--------')
   print('--------')
-  print('Started <Noob>') 
+  print('Started <Lite>') 
   return await client.change_presence(game=discord.Game(name='<Nøøb Gamer || ^help>')) 
 
 
