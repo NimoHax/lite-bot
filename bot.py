@@ -74,10 +74,6 @@ async def kill(ctx):
   await bot.say("Your wish shall be granted!!!! That Your daddy even wont know😈. I ll see you while you sleep FOREVER!!!!"+" "+ctx.message.author.name)
 
 @bot.command(pass_context=True)
-async def badday(ctx):
-  await bot.say("Hehe... cause Am having a good day😂"+" "+ctx.message.author.name)
-  
-@bot.command(pass_context=True)
 async def help(ctx):
   await bot.say("▪We Will Contact  Nøøb Gamer Sum More Information For This Bot.▪ "+" "+ctx.message.author.name) 
 
