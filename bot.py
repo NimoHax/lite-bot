@@ -15,6 +15,7 @@ bot = commands.Bot(command_prefix="^")
 async def on_ready():
   print(bot.user.name)
 
+client.change_presence(game=discord.Game(name='<Nøøb Gamer || ^help>')) 
   
 #A SIMPLE TEST COMMAND
 @bot.command(pass_context=True)
