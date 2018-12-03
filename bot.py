@@ -37,5 +37,14 @@ async def goodnight(ctx):
 async def goodday(ctx):
   await bot.say("Shit! Cause am having a bad day!😑"+" "+ctx.message.author.name)
 
+@bot.command(pass_context=True)
+async def why(ctx):
+  await bot.say("I dont know man. Am so sad 😢😭"+" "+ctx.message.author.name)
+  
+@bot.command(pass_context=True)
+async def who(ctx):
+  await bot.say("Oh never mind 😔 it s just dyno 😝"+" "+ctx.message.author.name) 
+  
+  
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
 bot.run(os.environ['BOT_TOKEN'])
