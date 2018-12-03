@@ -21,7 +21,13 @@ async def on_ready():
 async def hi(ctx):
   await bot.say("Hello there"+" "+ctx.message.author.name)
   
+@bot.command(pass_context=True)
+async def welcome(ctx):
+  await bot.say("☆Welcome to my first Noob Bot☆"+" "+ctx.message.author.name)
   
+@bot.command(pass_context=True)
+async def goodmorning(ctx):
+  await bot.say("Hey  hey!! goodmorning. 😎 Todays the perfect day to go to a beach😎😎."+" "+ctx.message.author.name)
   
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
 bot.run(os.environ['BOT_TOKEN'])
