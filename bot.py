@@ -5,7 +5,7 @@ import os
 
 
 #GIVE YOUR BOT A PREFIX; mine is a.
-bot = commands.Bot(command_prefix="^")
+bot = commands.Bot(command_prefix="*")
 
 
 
@@ -17,7 +17,7 @@ async def on_ready():
   print('--------')
   print('--------')
   print('Started <Lite>') 
-  return await bot.change_presence(game=discord.Game(name='<Nøøb Gamer || ^help>')) 
+  return await bot.change_presence(game=discord.Game(name='<Nøøb Gamer || *help>')) 
 
 
   
